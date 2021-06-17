@@ -1,3 +1,5 @@
+### Wechat images are stored in dat format, this program convert them into images.
+
 # weixin_Image.dat 破解
 # JPG 16进制 FF D8 FF
 # PNG 16进制 89 50 4e 47
@@ -6,14 +8,14 @@
 # 自动计算异或 值
 import os
 
-# 微信image.dat文件路径  
+# 微信image.dat文件路径   wechat image.dat folder
 into_path = "./datfile/"
-# picture output file
+# picture output file folder
 out_path = "./converted/" 
 
 
 """
-    解码
+    解码  decoding
     param f: 微信图片路径
     param fn:微信图片目录下的.dat
     return:
